@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#07090f"/><meta name="referrer" content="strict-origin-when-cross-origin"/><meta name="description" content="Corporate Mazdur — 9 to 5 ka retro soundtrack."/>
+<title>Corporate Mazdur — 9 to 5 ka Soundtrack</title>
+<link rel="icon" type="image/jpeg" href="https://iili.io/K7jsr1s.jpg">
+<link rel="shortcut icon" type="image/jpeg" href="https://iili.io/K7jsr1s.jpg">
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<canvas id="rain" aria-hidden="true"></canvas><div class="ambient ambient--one"></div><div class="ambient ambient--two"></div><div class="scanlines"></div>
+<div class="shell">
+<header class="topbar"><div class="brand-lockup"><div class="eyebrow"><span class="pulse-dot"></span> CORPORATE MAZDUR RADIO <span class="eyebrow-divider">//</span> LIVE FROM 9 TO 5</div><h1><span>CORPORATE</span><strong>MAZDUR</strong></h1><p>Retro songs for modern office survivors.</p></div><div class="office-meter"><div class="meter-top"><span>MAZDUR STATUS</span><b id="statusLabel">SURVIVING</b></div><div class="meter-line"><span id="statusFill"></span></div><div class="meter-foot"><span>COFFEE</span><span>DEADLINES</span><span>SALARY</span></div></div></header>
+<section class="tech-marquee"><div class="tech-marquee__track"><span>☁ Data Cloud / Data 360</span><i></i><span>⚡ Agentforce</span><i></i><span>⌘ Apex</span><i></i><span>◈ Prompt Template</span><i></i><span>⇢ Flow</span><i></i><span>◫ SOQL</span><i></i><span>✉ Email-to-Case</span><i></i><span>🧠 Prompt Builder</span><i></i><span>✦ RAG / Grounding</span><i></i><span>◉ Einstein AI</span><i></i><span>☁ Data Cloud / Data 360</span><i></i><span>⚡ Agentforce</span><i></i><span>⌘ Apex</span><i></i><span>◈ Prompt Template</span><i></i><span>⇢ Flow</span><i></i><span>◫ SOQL</span><i></i><span>✉ Email-to-Case</span><i></i><span>🧠 Prompt Builder</span><i></i><span>✦ RAG / Grounding</span><i></i><span>◉ Einstein AI</span></div></section>
+<main class="dashboard">
+<section class="hero-panel"><div class="hero-glow"></div><div class="hero-grid"></div>
+<div class="terminal terminal--apex"><div class="terminal-bar"><span>APEX</span><span class="terminal-live">RUNNING</span></div><code><span class="kw">public</span> <span class="type">with sharing class</span> <span class="name">CorporateMazdur</span> {<br>&nbsp;&nbsp;<span class="kw">return</span> <span class="str">"playRetro();"</span>;<br>}</code></div>
+<div class="terminal terminal--flow"><div class="terminal-bar"><span>FLOW</span><span class="terminal-live terminal-live--mint">ACTIVE</span></div><div class="flow-node flow-node--start">START</div><div class="flow-line"></div><div class="flow-node">Get Records</div><div class="flow-line"></div><div class="flow-node flow-node--accent">▶ PLAY SONG</div></div>
+<div class="terminal terminal--prompt"><div class="terminal-bar"><span>PROMPT TEMPLATE</span><span class="terminal-live terminal-live--gold">GROUNDED</span></div><code><span class="kw">Role:</span> Corporate Music Companion<br><span class="kw">Grounding:</span> nostalgia + mood + deadline<br><span class="kw">Response:</span> <span class="str">"Pehle gaana, phir production."</span></code></div>
+<div class="hero-youtube"><div class="hero-kicker">THE 2AM DEPLOYMENT EDITION</div><div class="hero-youtube__frame"><div id="youtubePlayer" class="youtube-player"></div><div class="youtube-overlay"><span>YOUTUBE RADIO</span><div class="youtube-actions"><button id="ytFullscreen" type="button" title="Fullscreen video" aria-label="Enter fullscreen">⛶</button><a id="ytOpen" href="#" target="_blank" rel="noopener">OPEN ↗</a></div></div></div><div class="hero-youtube__caption"><span id="heroVideoTitle">RETRO SIGNAL ONLINE</span><small id="heroVideoMeta">Pick a mood. Press play. Survive the shift.</small></div></div>
+<div class="agent-card"><span class="agent-icon">✦</span><div><strong>AGENTFORCE</strong><small id="agentLine">Agent says: “Pehle gaana, phir production.”</small></div></div>
+</section>
+<aside class="player-card"><div class="player-head"><span>NOW PLAYING</span><span class="live-pill"><i></i> <span id="ytStatus">READY</span></span></div>
+<div class="cover-wrap"><div class="cover-art" id="coverArt"><div class="cover-sheen"></div><div class="cover-type">CORPORATE<br><b>MAZDUR</b></div><div class="cover-sub">9 TO 5 KA SOUNDTRACK</div><div class="cover-code">SELECT *<br>FROM NOSTALGIA<br>WHERE MOOD = 'GOOD'</div></div><div class="vinyl-mini"></div></div>
+<div class="track-meta"><div class="track-badge" id="trackMoodBadge">☕ MORNING COFFEE</div><h2 id="trackTitle">Select a track</h2><p id="trackArtist">Classic Hindi</p><p class="track-quote" id="trackQuote">“Pehle gaana, phir production.”</p></div>
+<div class="watch-row"><span>VIDEO PLAYBACK</span><a id="ytOpenMobile" href="#" target="_blank" rel="noopener">WATCH ON YOUTUBE ↗</a></div>
+<div class="progress-row"><span id="timeCurrent">0:00</span><input id="seek" type="range" min="0" max="100" step="0.1" value="0"/><span id="timeTotal">0:00</span></div>
+<div class="controls"><button id="shuffleBtn" class="icon-btn" aria-label="Shuffle" aria-pressed="false">⤨</button><button id="prevBtn" class="icon-btn" aria-label="Previous">◀</button><button id="playBtn" class="play-btn" aria-label="Play"><span id="playIcon">▶</span><span id="pauseIcon" hidden>Ⅱ</span></button><button id="nextBtn" class="icon-btn" aria-label="Next">▶</button><button id="repeatBtn" class="icon-btn" aria-label="Repeat" aria-pressed="false">↻</button></div>
+<div class="volume-row"><span>🔊</span><input id="volume" type="range" min="0" max="100" value="72"/><span>FAST</span></div><div class="player-tip" id="playerTip">Tap play to start the YouTube player.</div>
+</aside>
+<section class="library"><div class="section-heading"><div><span class="section-kicker">YOUR OFFICE RADIO</span><h2>Pick a mood. Survive the shift.</h2></div><div class="catalog-note"><span id="catalogCount">0</span> Hindi songs • YouTube radio</div></div><div class="mood-bar" id="moodBar" role="tablist"></div><div class="playlist-list" id="playlistList" role="listbox"></div></section>
+<section class="experience-grid"><article class="experience-card experience-card--rain"><span class="exp-icon">🌧</span><div><b>RAIN MODE</b><p>Retro songs + rainy-night code energy.</p></div><button data-mode="rain">ACTIVATE</button></article><article class="experience-card"><span class="exp-icon">☁</span><div><b>DATA CLOUD MODE</b><p>“Aggregate everything. Feel nothing.”</p></div><button data-mode="cloud">RUN</button></article><article class="experience-card"><span class="exp-icon">⚡</span><div><b>AGENTFORCE MODE</b><p>AI chooses the next survival track.</p></div><button data-mode="agent">ASK AGENT</button></article><article class="experience-card"><span class="exp-icon">⌘</span><div><b>APEX MODE</b><p>Maximum nostalgia. Zero governor limits.</p></div><button data-mode="apex">EXECUTE</button></article></section>
+</main>
+<footer class="footer"><div><b>CORPORATE MAZDUR</b> — 9 to 5 ka soundtrack.</div><div>Hindi retro radio • YouTube-powered playback • Salesforce-tech atmosphere</div></footer>
+</div>
+<script src="src/songs.js"></script><script src="src/rain.js"></script><script src="src/app.js"></script>
+</body></html>
